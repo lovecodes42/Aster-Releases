@@ -1,0 +1,44 @@
+# Aster 1.4.0 release candidate
+
+Status: release-source evidence for the reviewed implementation boundary `3c138b2862f994843401ca1a1752cd03617ab54b`, after promoted Aster 1.3.2.
+
+## Summary
+
+Aster 1.4.0 advances the desktop runtime to the Qt-based application shell, completes the Theme System Phase 2 production boundary for Forest, Rain, and Classified Facility, and strengthens release/development verification and operational safety.
+
+## Desktop and theme system
+
+- Qt is now the primary desktop contract, with the legacy Tk desktop fallback retired from the normal runtime path.
+- Desktop startup, update integration, navigation, theme hosting, and security-service composition were aligned with the Qt runtime.
+- Theme System Phase 2 establishes the production package/manifest contract and verified runtime integration for Forest Remastered, Rain, and Classified Facility.
+- Forest gained its production QML scene, chat overlay, animated bird contract, and verified theme runtime behavior.
+- Rain gained its approved production environment and runtime ambience layers for glass rain, drops, ripples, lighting, cat breathing, coffee steam, and rare window-light behavior.
+- Classified Facility gained its approved production environment/terminal assets, theme QML, and in-CRT popup integration.
+
+## Verification, CI, and maintenance
+
+- A consolidated Aster state command and full preflight command were added for canonical local verification.
+- Shared changed-file test routing was introduced and expanded across repository safety, memory, agency, recovery, security, composition, state, and core routes.
+- Architecture dependency inversion and module-boundary enforcement were tightened, including classification of the release-freeze diagnostic.
+- Hardware requirements and a read-only hardware preflight were added.
+- Persistent development workspaces are now separated from disposable CI workspaces, and verified housekeeping/cold-archive tooling was added.
+- Watchdog and Observation Mode operational documentation was added.
+
+## Release governance
+
+- Ordinary-release freeze ordering now explicitly distinguishes the reviewed implementation boundary from the later release-source commit A.
+- Candidate evidence is frozen first against the implementation boundary; the exact release-source SHA is assigned only after the direct evidence-only child commit passes validation.
+
+## Release basis
+
+- Live promoted baseline: Aster 1.3.2 (`aster-1.3.2`), source `d8f4a3ec1d5c55d1918a3efcb2f215c56fa0bda3`.
+- Reviewed implementation boundary: `3c138b2862f994843401ca1a1752cd03617ab54b`.
+- Released-source to implementation-boundary delta: 88 commits / 106 changed paths.
+- Exact release-source commit A is the direct child containing only this 1.4.0 evidence packet and these release notes.
+
+## Safety and compatibility
+
+- Full pre-freeze Aster preflight returned `READY` from a clean isolated checkout.
+- No live installation, deployment, promotion, publication, signing, tag, release ZIP, manifest, distribution artifact, or Inbox admission is part of this evidence freeze.
+- No artwork is modified by the release freeze itself.
+- No persistent-state migration is declared by this evidence-freeze operation.
